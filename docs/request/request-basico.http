@@ -1,0 +1,26 @@
+
+
+
+### llamar a la API
+curl --location --request POST 'http://localhost:7001/api/auth/login' \
+# --header 'Authorization: Bearer {{KGC_TOKEN}}' \
+# --header 'xrsdn-sos: web' --header 'xasd: 1.0.0' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "documento": "",
+    "password": ""
+}'
+
+
+
+
+### llamar a la API
+curl --location --request POST 'http://localhost:7001/api/visitas/sdk-archivo' \
+ --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiI0OTk0NjI0IiwiaWF0IjoxNjk1NjgxMjczLCJleHAiOjE3MDA4NjUyNzN9.vZPVuQRhAs1H7tuakiD1qt6ZbcKS7dpPp4cnMKxJ0hQ' \
+# --header 'xrsdn-sos: web' --header 'xasd: 1.0.0' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "idPuesto": 1
+}'
+
+
